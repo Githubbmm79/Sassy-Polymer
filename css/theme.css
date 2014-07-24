@@ -1,0 +1,113 @@
+/* line 1, ../scss/theme.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #E5E5E5;
+  font-family: 'RobotoDraft', sans-serif;
+}
+
+/* line 7, ../scss/theme.scss */
+core-header-panel {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 12, ../scss/theme.scss */
+core-toolbar {
+  background: #03a9f4;
+  color: white;
+}
+
+/* line 16, ../scss/theme.scss */
+#tabs {
+  width: 100%;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 24, ../scss/theme.scss */
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+@media (min-width: 481px) {
+  /* line 29, ../scss/theme.scss */
+  #tabs {
+    width: 200px;
+  }
+
+  /* line 32, ../scss/theme.scss */
+  .container {
+    width: 400px;
+  }
+}
+/*  post-card */
+/* line 39, ../scss/theme.scss */
+:host {
+  display: block;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* line 48, ../scss/theme.scss */
+.card-header {
+  margin-bottom: 10px;
+}
+
+/* line 51, ../scss/theme.scss */
+polyfill-next-selector {
+  content: '.card-header h2';
+}
+
+/* line 52, ../scss/theme.scss */
+.card-header ::content h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/* line 57, ../scss/theme.scss */
+polyfill-next-selector {
+  content: '.card-header img';
+}
+
+/* line 58, ../scss/theme.scss */
+.card-header ::content img {
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* line 63, ../scss/theme.scss */
+core-icon-button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  fill: #636363;
+}
+
+/* line 69, ../scss/theme.scss */
+:host([favorite]) core-icon-button {
+  fill: #da4336;
+}
+
+/* post list */
+/* line 77, ../scss/theme.scss */
+:host {
+  display: block;
+  width: 100%;
+}
+
+/* line 81, ../scss/theme.scss */
+post-card {
+  margin-bottom: 30px;
+}
